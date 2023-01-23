@@ -1,0 +1,17 @@
+SRC_TASK_22=Cr.c
+EXE_TASK_22=Cr
+SRC_TASK_23=Cr3.c
+EXE_TASK_23=Cr3
+SRC_TASK_23_h=hl.c
+EXE_TASK_23_h=hl
+CFLAGS=
+
+all: T22 T23 T23h
+
+T22: ${SRC_TASK_22}
+	gcc ${CFLAGS} ${SRC_TASK_22} -o ${EXE_TASK_22}
+T23: ${SRC_TASK_23}
+	gcc ${CFLAGS} ${SRC_TASK_23} -o ${EXE_TASK_23}
+T23h: ${SRC_TASK_23_h}
+	gcc ${CFLAGS} ${SRC_TASK_23_h} -o ${EXE_TASK_23_h}
+	clear
